@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Borja 💙 Alicia</title>
+
+    <meta name="theme-color" content="#09090B">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<canvas id="space"></canvas>
+
+<div id="stars"></div>
+
+<section id="landing">
+
+<!-- CONTADOR -->
+
+<section id="counterScene" class="scene hidden">
+
+<section id="galleryScene" class="scene hidden">
+
+<section id="letterScene" class="scene hidden">
+
+<section id="finalScene" class="scene hidden">
+
+    <div class="finalContainer">
+
+        <div id="heartContainer">
+            ❤️
+        </div>
+
+        <h1 id="finalTitle">
+            Gracias por existir
+        </h1>
+
+        <p id="finalSubtitle">
+
+            Si pudiera volver a empezar...
+
+            <br><br>
+
+            Te volvería a elegir.
+
+            <br>
+
+            Una...
+
+            <br>
+
+            y mil veces más.
+
+        </p>
+
+        <div class="signatureFinal">
+
+            Borja 💙 Alicia
+
+            <br>
+
+            ∞
+
+        </div>
+
+    </div>
+
+</section>
+
+    <div class="envelope" id="envelope">
+
+        <div class="flap"></div>
+
+        <div class="letter">
+
+            <div class="letterContent">
+
+                <h2>Para Alicia ❤️</h2>
+
+                <div id="letterText"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <div class="galleryContainer">
+
+        <img id="galleryImage" src="images/foto1.jpg">
+
+        <div class="photoCaption">
+            <p id="photoText"></p>
+        </div>
+
+        <button id="nextPhoto">
+            Siguiente ❤️
+        </button>
+
+    </div>
+
+</section>
+
+    <div class="scene-content">
+
+        <p class="small-title">
+            Desde aquel día...
+        </p>
+
+        <h2 id="days">
+            000
+        </h2>
+
+        <span class="days-text">
+            DÍAS
+        </span>
+
+        <div class="clock">
+
+            <div>
+
+                <span id="hours">00</span>
+
+                <small>Horas</small>
+
+            </div>
+
+            <div>
+
+                <span id="minutes">00</span>
+
+                <small>Minutos</small>
+
+            </div>
+
+            <div>
+
+                <span id="seconds">00</span>
+
+                <small>Segundos</small>
+
+            </div>
+
+        </div>
+
+        <p class="loveText">
+            Y todavía sigo sonriendo cada vez que apareces.
+        </p>
+
+        <button id="nextScene">
+            Continuar ❤️
+        </button>
+
+    </div>
+
+</section>
+
+    <div class="overlay"></div>
+
+    <img
+        class="hero"
+        src="images/portada.jpg"
+        alt="Borja y Alicia">
+
+    <div class="content">
+
+        <p class="intro" id="introText"></p>
+
+        <h1>
+            Borja <span>💙</span> Alicia
+        </h1>
+
+        <p class="subtitle">
+            Nuestra historia acaba de empezar
+        </p>
+
+        <button id="enterButton">
+            Comenzar
+        </button>
+
+    </div>
+
+    <p class="signature">
+        Hecho con todo el amor del mundo para Alicia ❤️
+    </p>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
