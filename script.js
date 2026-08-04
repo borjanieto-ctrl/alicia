@@ -295,17 +295,15 @@ function writeLetter(){
 
     setTimeout(()=>{
 
-      const paper=document.querySelector(".paper");
-
-const timer=setInterval(()=>{
+const timer = setInterval(()=>{
 
     letterText.textContent += letter.charAt(letterIndex);
 
-    paper.style.height=(letterText.scrollHeight+80)+"px";
-
     letterIndex++;
 
-    if(letterIndex>=letter.length){
+    letterText.scrollTop = letterText.scrollHeight;
+
+    if(letterIndex >= letter.length){
 
         clearInterval(timer);
 
