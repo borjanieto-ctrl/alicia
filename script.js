@@ -295,32 +295,29 @@ function writeLetter(){
 
     setTimeout(()=>{
 
-        const timer = setInterval(()=>{
+      const paper=document.querySelector(".paper");
 
-            letterText.textContent += letter.charAt(letterIndex);
+const timer=setInterval(()=>{
 
-           const paper = document.querySelector(".paper");
+    letterText.textContent += letter.charAt(letterIndex);
 
-paper.style.height =
-    (letterText.scrollHeight + 90) + "px";
+    paper.style.height=(letterText.scrollHeight+80)+"px";
 
-            letterIndex++;
+    letterIndex++;
 
-            letterText.scrollTop = letterText.scrollHeight;
+    if(letterIndex>=letter.length){
 
-            if(letterIndex >= letter.length){
+        clearInterval(timer);
 
-                clearInterval(timer);
+        setTimeout(()=>{
 
-                setTimeout(()=>{
+            fadeTo(letterScene,finalScene);
 
-                    fadeTo(letterScene,finalScene);
+        },5000);
 
-                },5000);
+    }
 
-            }
-
-        },35);
+},35);
 
     },900);
 
