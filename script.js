@@ -240,3 +240,85 @@ nextPhoto.addEventListener("click",()=>{
     }
 
 });
+
+/* ===========================
+   CARTA
+=========================== */
+
+const letter = `
+
+Alicia...
+
+Hay personas que llegan a tu vida sin hacer ruido...
+
+y terminan convirtiéndose en tu lugar favorito.
+
+Gracias por aparecer cuando menos lo esperaba.
+
+Gracias por las risas.
+
+Por los abrazos.
+
+Por tu paciencia.
+
+Por quererme incluso cuando yo mismo no era capaz.
+
+Desde que llegaste...
+
+todo tiene más sentido.
+
+Y aunque el futuro sea incierto...
+
+hay una única certeza que tengo.
+
+Quiero caminarlo contigo.
+
+Siempre.
+
+Te quiero muchísimo.
+
+❤️
+
+Borja
+`;
+
+let letterIndex = 0;
+let writing = false;
+
+function writeLetter(){
+
+    if(writing) return;
+
+    writing = true;
+
+    envelope.classList.add("open");
+
+    setTimeout(()=>{
+
+        const timer = setInterval(()=>{
+
+            letterText.textContent += letter.charAt(letterIndex);
+
+            letterIndex++;
+
+            letterText.scrollTop = letterText.scrollHeight;
+
+            if(letterIndex >= letter.length){
+
+                clearInterval(timer);
+
+                setTimeout(()=>{
+
+                    fadeTo(letterScene,finalScene);
+
+                },5000);
+
+            }
+
+        },35);
+
+    },900);
+
+}
+
+envelope.addEventListener("click",writeLetter);
