@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AETERNUM · Borja ❤️ Alicia</title>
+
+    <meta name="theme-color" content="#09090B">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<canvas id="space"></canvas>
+
+<!-- =========================
+INTRO
+========================= -->
+
+<section id="landing" class="scene active">
+
+    <img
+        class="hero"
+        src="images/portada.jpg"
+        alt="Borja y Alicia">
+
+    <div class="overlay"></div>
+
+    <div class="content">
+
+        <p id="introText" class="intro"></p>
+
+        <h1>
+
+            Borja
+
+            <span>💙</span>
+
+            Alicia
+
+        </h1>
+
+        <p class="subtitle">
+
+            Nuestra historia acaba de empezar...
+
+        </p>
+
+        <button id="enterButton">
+
+            Comenzar ❤️
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================
+CONTADOR
+========================= -->
+
+<section id="counterScene" class="scene hidden">
+
+    <div class="sceneContent">
+
+        <p class="smallTitle">
+
+            Desde aquel día...
+
+        </p>
+
+        <h2 id="days">
+
+            000
+
+        </h2>
+
+        <span class="daysText">
+
+            DÍAS
+
+        </span>
+
+        <div class="clock">
+
+            <div>
+
+                <span id="hours">00</span>
+
+                <small>Horas</small>
+
+            </div>
+
+            <div>
+
+                <span id="minutes">00</span>
+
+                <small>Minutos</small>
+
+            </div>
+
+            <div>
+
+                <span id="seconds">00</span>
+
+                <small>Segundos</small>
+
+            </div>
+
+        </div>
+
+        <p class="loveText">
+
+            Y todavía sigo sonriendo cada vez que apareces.
+
+        </p>
+
+        <button id="nextScene">
+
+            Continuar ❤️
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================
+GALERÍA
+========================= -->
+
+<section id="galleryScene" class="scene hidden">
+
+    <div class="gallery">
+
+        <img
+            id="galleryImage"
+            src=""
+            alt="Nuestros recuerdos">
+
+        <p id="photoText"></p>
+
+        <button id="nextPhoto">
+
+            Siguiente ❤️
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =========================
+CARTA
+========================= -->
+
+<section id="letterScene" class="scene hidden">
+
+    <div
+        id="envelope"
+        class="envelope">
+
+        <div class="flap"></div>
+
+        <div class="paper">
+
+            <div id="letterText"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+FINAL
+========================= -->
+
+<section id="finalScene" class="scene hidden">
+
+    <div class="finalContent">
+
+        <div class="heart">
+
+            ❤️
+
+        </div>
+
+        <h2>
+
+            Gracias por existir
+
+        </h2>
+
+        <p>
+
+            Si pudiera volver a empezar...
+
+            <br><br>
+
+            Te volvería a elegir.
+
+            <br><br>
+
+            Una...
+
+            <br>
+
+            y mil veces más.
+
+        </p>
+
+        <h3>
+
+            Borja 💙 Alicia
+
+        </h3>
+
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
