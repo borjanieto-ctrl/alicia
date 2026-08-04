@@ -108,3 +108,59 @@ enterButton.addEventListener("click",()=>{
 
 });
 
+/* ===========================
+   CONTADOR
+=========================== */
+
+const startDate = new Date("2026-01-04T17:30:00");
+
+const days = document.getElementById("days");
+const hours = document.getElementById("hours");
+const minutes = document.getElementById("minutes");
+const seconds = document.getElementById("seconds");
+
+function updateCounter(){
+
+    const now = new Date();
+
+    let diff = now - startDate;
+
+    if(diff < 0){
+
+        diff = 0;
+
+    }
+
+    const totalSeconds = Math.floor(diff/1000);
+
+    const d = Math.floor(totalSeconds/86400);
+
+    const h = Math.floor((totalSeconds%86400)/3600);
+
+    const m = Math.floor((totalSeconds%3600)/60);
+
+    const s = totalSeconds%60;
+
+    days.textContent=d;
+
+    hours.textContent=String(h).padStart(2,"0");
+
+    minutes.textContent=String(m).padStart(2,"0");
+
+    seconds.textContent=String(s).padStart(2,"0");
+
+}
+
+setInterval(updateCounter,1000);
+
+updateCounter();
+
+/* ===========================
+   SIGUIENTE ESCENA
+=========================== */
+
+nextScene.addEventListener("click",()=>{
+
+    fadeTo(counterScene,galleryScene);
+
+});
