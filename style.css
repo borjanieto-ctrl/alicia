@@ -503,29 +503,36 @@ CARTA
 }
 
 .paper{
-    width:min(700px,90vw);
 
-    min-height:180px;
+    position:absolute;
 
-    height:auto;
+    left:50%;
+    top:55px;
 
-    background:#fff;
+    transform:translateX(-50%) translateY(140px);
 
-    border-radius:20px;
+    width:min(700px,92vw);
+
+    min-height:220px;
+
+    max-height:none;
 
     padding:45px;
 
+    background:white;
+
     color:#222;
 
-    line-height:1.9;
+    border-radius:18px;
 
-    font-size:1.2rem;
+    box-shadow:0 20px 60px rgba(0,0,0,.35);
 
-    box-shadow:0 20px 50px rgba(0,0,0,.35);
+    overflow:visible;
 
-    overflow:hidden;
+    transition:
+        transform 1s ease,
+        height .4s ease;
 
-    transition:height .35s ease;
 }
 
 .envelope.open .flap{
@@ -541,8 +548,15 @@ CARTA
 }
 
 #letterText{
+
     white-space:pre-wrap;
+
     line-height:1.9;
+
+    font-size:1.2rem;
+
+    overflow:visible;
+
 }
 
 /* =========================
