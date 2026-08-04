@@ -299,6 +299,11 @@ function writeLetter(){
 
             letterText.textContent += letter.charAt(letterIndex);
 
+           const paper = document.querySelector(".paper");
+
+paper.style.height =
+    (letterText.scrollHeight + 90) + "px";
+
             letterIndex++;
 
             letterText.scrollTop = letterText.scrollHeight;
