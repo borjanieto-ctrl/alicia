@@ -164,3 +164,79 @@ nextScene.addEventListener("click",()=>{
     fadeTo(counterScene,galleryScene);
 
 });
+
+/* ===========================
+   GALERÍA
+=========================== */
+
+const photos = [
+
+    {
+        image:"images/foto1.jpg",
+        text:"Sin darme cuenta, aquel día encontré el lugar donde siempre quiero volver."
+    },
+
+    {
+        image:"images/foto2.jpg",
+        text:"Hay besos que duran unos segundos... y recuerdos que duran para siempre."
+    },
+
+    {
+        image:"images/foto3.jpg",
+        text:"Aquí ya no veía una fotografía. Veía mi felicidad."
+    },
+
+    {
+        image:"images/foto4.jpg",
+        text:"Mi sitio favorito dejó de ser un lugar. Empezó a ser una persona."
+    },
+
+    {
+        image:"images/foto5.jpg",
+        text:"Contigo descubrí que el amor también puede sentirse como paz."
+    },
+
+    {
+        image:"images/foto6.jpg",
+        text:"Ojalá todos los caminos que me queden por recorrer sean contigo de la mano."
+    }
+
+];
+
+let currentPhoto = 0;
+
+function showPhoto(){
+
+    galleryImage.style.opacity = 0;
+    photoText.style.opacity = 0;
+
+    setTimeout(()=>{
+
+        galleryImage.src = photos[currentPhoto].image;
+
+        photoText.textContent = photos[currentPhoto].text;
+
+        galleryImage.style.opacity = 1;
+        photoText.style.opacity = 1;
+
+    },300);
+
+}
+
+showPhoto();
+
+nextPhoto.addEventListener("click",()=>{
+
+    currentPhoto++;
+
+    if(currentPhoto < photos.length){
+
+        showPhoto();
+
+    }else{
+
+        fadeTo(galleryScene,letterScene);
+
+    }
+
+});
